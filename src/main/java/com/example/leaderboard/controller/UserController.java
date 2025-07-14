@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "https://your-frontend.vercel.app") // ✅ Best for production
+@CrossOrigin(origins = "*")  // ✅ TEMP: Allow all origins for testing
 public class UserController {
 
     private final UserService userService;
